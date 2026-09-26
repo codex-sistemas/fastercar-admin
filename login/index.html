@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Login - FasterCar Admin</title>
+
+    <link rel="icon" href="../assets/images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <main class="admin-login">
+
+        <section class="admin-login-card">
+
+            <img class="admin-login-logo" src="../assets/images/logo.png" alt="FasterCar">
+
+            <h1>FasterCar</h1>
+
+            <h2>Painel Administrativo</h2>
+
+            <p>
+                Entre com sua conta Google para acessar o painel.
+            </p>
+            <button id="google-login" style=" outline: none; border: none;">
+                <img src="../assets/images/google.png" alt="Google logo" style="width: 5rem;vertical-align: middle;">
+                <span style="width: 100%; font-size: 1.5rem;">Fazer Login Com o Google</span>
+            </button>
+
+            <p class="admin-login-error" id="login-error" hidden></p>
+
+        </section>
+
+    </main>
+
+
+    <script src="./scripts/login.js"></script>
+    <script type="module" src="../scripts/firebase.js"></script>
+
+</body>
+
+</html>

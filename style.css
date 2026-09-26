@@ -1,26 +1,22 @@
 :root {
 
-    --color-background: #111111;
+    --color-background: #292929;
     --color-surface: #1b1b1b;
     --color-surface-light: #242424;
 
-    --color-primary: #f5c400;
-    --color-primary-dark: #c9a000;
+    --color-primary: #fecd03;
+    --color-secondary: #ffb01f;
 
     --color-text: #ffffff;
     --color-text-secondary: #aaaaaa;
 
-    --color-success: #35c759;
-    --color-danger: #ff453a;
-
     --sidebar-width: 16rem;
+    /* --color-text-secondary: #757575; */
 
-    --border-radius: 0.6rem;
-
-    --space-small: 0.5rem;
-    --space-medium: 1rem;
-    --space-large: 2rem;
-
+    --color-success: #4caf50;
+    --color-warning: #ff9800;
+    --color-error: #f44336;
+    /* --color-border: #dddddd; */
 }
 
 
@@ -49,6 +45,7 @@ body {
         Helvetica,
         sans-serif;
 }
+
 
 
 /* CONTAINER */
@@ -183,6 +180,13 @@ body {
 
     font-weight: bold;
 
+}
+
+.menu-item.inactive {
+    pointer-events: none;
+    color: var(--color-surface);
+
+    background-color: var(--color-background);
 }
 
 

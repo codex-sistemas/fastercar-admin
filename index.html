@@ -17,7 +17,7 @@
 
         <!-- MENU -->
 
-        <aside class="sidebar">
+        <aside class=" sidebar">
 
             <div class="sidebar-header">
 
@@ -44,19 +44,19 @@
                     Veículos
                 </button>
 
-                <button class="menu-item" data-screen="rides">
+                <button class="menu-item inactive" data-screen="rides">
                     Corridas
                 </button>
 
-                <button class="menu-item" data-screen="passes">
+                <button class="menu-item inactive" data-screen="passes">
                     Passes
                 </button>
 
-                <button class="menu-item" data-screen="passengers">
+                <button class="menu-item inactive" data-screen="passengers">
                     Passageiros
                 </button>
 
-                <button class="menu-item" data-screen="payments">
+                <button class="menu-item inactive" data-screen="payments">
                     Pagamentos
                 </button>
 
@@ -65,7 +65,7 @@
 
             <div class="sidebar-footer">
 
-                <button id="logout-button" class="logout-button">
+                <button id="logout-button" class="logout-button" onclick="window.FIREBASE.signOut()">
                     Sair
                 </button>
 
@@ -342,7 +342,7 @@
     </div>
 
 
-    <!-- <script type="module" src="./scripts/admin.js"></script> -->
+    <script type="module" src="./scripts/firebase.js"></script>
 
 </body>
 
