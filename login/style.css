@@ -19,10 +19,18 @@
     box-sizing: border-box;
 }
 
+.description-login {
+    color: var(--color-secondary);
+}
+
 .admin-login-logo {
     width: 90px;
     height: 90px;
     object-fit: contain;
+}
+
+.admin-login-error {
+    color: var(--color-error);
 }
 
 

@@ -37,8 +37,12 @@ window.FIREBASE.loginGoogle = async () => {
         const result = await signInWithPopup(auth, provider);
 
         const user = result.user;
-        // const token = await user.getIdToken();
-        window.location.href = "../";
+        const token = await user.getIdToken();
+
+        return {
+            user,
+            token
+        };
 
     } catch (error) {
         console.log("CODE:", error.code);
@@ -60,11 +64,19 @@ window.FIREBASE.signOut = async () => {
 
 onAuthStateChanged(auth, user => {
     const isLoginPage = window.location.pathname.includes("/login/");
+    window.FIREBASE.user = user;
+
     if (user) {
-        console.log(user)
+        // Dashboard (Login realizado)
+        init()
+
     } else if (isLoginPage && user) {
+        // Login (Login Realizado)
+        // Indo para Dashboard
         window.location.href = "../";
+
     } else if (!isLoginPage) {
+        // Dashboard (Login pendente)
         window.location.href = "./login/";
     }
 });
